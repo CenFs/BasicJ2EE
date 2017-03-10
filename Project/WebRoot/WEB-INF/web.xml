@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>bjyGraduationProject</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description>UserServlet</description>
+    <display-name>UserServlet</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>bjy.gp.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/user.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>ProductServlet</description>
+    <display-name>ProductServlet</display-name>
+    <servlet-name>ProductServlet</servlet-name>
+    <servlet-class>bjy.gp.servlet.ProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductServlet</servlet-name>
+    <url-pattern>/product.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>WareroomServlet</description>
+    <display-name>WareroomServlet</display-name>
+    <servlet-name>WareroomServlet</servlet-name>
+    <servlet-class>bjy.gp.servlet.WareroomServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WareroomServlet</servlet-name>
+    <url-pattern>/wareroom.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>ImportServlet</description>
+    <display-name>ImportServlet</display-name>
+    <servlet-name>ImportServlet</servlet-name>
+    <servlet-class>bjy.gp.servlet.ImportServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ImportServlet</servlet-name>
+    <url-pattern>/import.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>ExportServlet</description>
+    <display-name>ExportServlet</display-name>
+    <servlet-name>ExportServlet</servlet-name>
+    <servlet-class>bjy.gp.servlet.ExportServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExportServlet</servlet-name>
+    <url-pattern>/export.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>ReasonServlet</description>
+    <display-name>ReasonServlet</display-name>
+    <servlet-name>ReasonServlet</servlet-name>
+    <servlet-class>bjy.gp.servlet.ReasonServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReasonServlet</servlet-name>
+    <url-pattern>/reason.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>SearchServlet</description>
+    <display-name>SearchServlet</display-name>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>bjy.gp.servlet.SearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/search.do</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
